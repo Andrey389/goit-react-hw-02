@@ -20,7 +20,7 @@ export default function App() {
     <>
       <Description />
       <Options onCount={updateFeedback} />
-      <Feedback value={values} />
+      <Feedback values={values} />
     </>
   );
 }
