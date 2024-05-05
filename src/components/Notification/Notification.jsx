@@ -1,3 +1,7 @@
 export default function Notification() {
-  return 'No feedback yet!';
+  return (
+    <>
+      <p>No feedback yet!</p>
+    </>
+  );
 }
