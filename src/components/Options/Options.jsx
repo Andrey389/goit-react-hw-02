@@ -1,10 +1,10 @@
-export default function Options({ onCount, onReset }) {
+export default function Options({ onCount, onReset, visible }) {
   return (
     <div>
       <button onClick={() => onCount('good')}>Good</button>
       <button onClick={() => onCount('neutral')}>Neutral</button>
       <button onClick={() => onCount('bad')}>Bad</button>
-      <button onClick={onReset}>Reset</button>
+      {visible > 0 && <button onClick={onReset}>Reset</button>}
     </div>
   );
 }

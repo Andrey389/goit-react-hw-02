@@ -1,3 +1,3 @@
-export default function Notification({ isVisible }) {
-  return isVisible === 0 ? 'No feedback yet!' : ' ';
+export default function Notification() {
+  return 'No feedback yet!';
 }
